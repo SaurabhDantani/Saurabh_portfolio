@@ -31,3 +31,41 @@ body {
     text-wrap: balance;
   }
 }
+
+/* .gradientBackground {
+  background: linear-gradient(300deg, #ff1b6b, #45caff, #e81cff);
+  background-size: 180% 180%;
+  animation: gradient-animation 9s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+.gradientBackground {
+  background: radial-gradient(circle at 50% 50%, #a04970, #6d6c83, #3b7f99);
+  background-size: 280% 280%;
+  animation: radiant-gradient-animation 9s ease infinite;
+  border-radius: 0px; /* Adjust this value to control the roundness */
+  padding: 20px; /* Optional: adjust padding as needed */
+}
+
+@keyframes radiant-gradient-animation {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
